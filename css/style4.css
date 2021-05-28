@@ -1,0 +1,364 @@
+@font-face{
+    font-family: altereg;
+    src: url("../fonts/alte/altereg.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: altebold;
+    src: url("../fonts/alte/altebold.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: coco;
+    src: url("../fonts/cocogoose/coco.ttf") format("truetype");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: roboto;
+    color: black;
+    background-image: url("../img/bg-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-container{
+    width: 100%;
+    height: 1080px;
+    padding: 0;
+}
+
+.title-header{
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/bg-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-container{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/88.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.logomak{
+        width: 75px;
+    height: 75px;
+    background-image: url("../img/makisushilogo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-container li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container li ul a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.navbar-container li ul a:hover{
+    border-bottom: 1px solid black;
+}
+
+#login{
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    transition: .5s all ease-in-out;
+    background-color: black;
+    color: white;
+}
+
+#login:hover{
+    background-color: #f28145;
+    color: #000;
+}
+
+.hamburger{
+    display: none;
+}
+
+/* FOR THE HAMBURGER */
+.hamburger-container{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #161616;
+    transition: all .3s ease-in-out;
+}
+
+.hamburger-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hamburger-nav label a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.exit{
+    position:absolute;
+    top: 7%;
+    right: 7%;
+    cursor: pointer;
+}
+
+.logo-title{
+    display: block;   
+}
+/* END OF HAMBUGER */
+
+.line-left{
+    position: absolute;
+    top: -400px;
+    left: 11%;
+    z-index: 0;
+}
+
+.line-right{
+    position: absolute;
+    top: -400px;
+    right: 11%;
+    z-index: 0;
+}
+
+.parent-second{
+    height: auto; 
+    background-image: url("../img/bg-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.second-container{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.create{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.create span{
+    color: #f08746;
+}
+
+.about1{
+    font-size: 1.2rem;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.how{
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.about2{
+    font-style: italic;
+    text-align: center;
+}
+
+.about2 span{
+    font-size: 2rem;
+}
+
+form{
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.tosignup a{
+    color: #f08746;
+}
+
+.line-leftv2{
+    position: absolute;
+    top: 750px;
+    left: 30%;
+    z-index: -2;
+}
+
+.line-rightv2{
+    position: absolute;
+    top: 750px;
+    right: 30%;
+    z-index: -2;
+}
+
+.contact-parent{
+    z-index: -3;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    top: 100px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact label{
+    color: black;
+}
+
+.location{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
+
+    .navbar-container li{
+        display: none;
+    }
+    
+    .hamburger{
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/hamburger.png");
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    .line-leftv2{
+        display: none;
+    }
+    
+    .line-rightv2{
+        display: none;
+    }
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+    .navbar-container li{
+        display: none;
+    }
+    
+    .hamburger{
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/hamburger.png");
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    .line-left{
+        opacity: .5;
+    }
+    
+    .line-right{
+        opacity: .5;
+    }
+    
+    .create{
+        font-size: 2.2rem !important;
+    }
+    
+     .line-leftv2{
+        position: absolute;
+        top: 750px !important;
+        left: 15%;
+    }
+    
+    .line-rightv2{
+        position: absolute;
+        top: 750px !important;
+        right: 15%;
+    }
+    
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) { 
+    
+    .create{
+        font-size: 2.5rem;
+    }
+    
+    .line-leftv2{
+        position: absolute;
+        top: 720px;
+    }
+    
+    .line-rightv2{
+        position: absolute;
+        top: 720px;
+    }
+    
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 993px) {
+    
+}
+
+
+
